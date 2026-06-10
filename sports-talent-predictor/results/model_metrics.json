@@ -1,0 +1,22 @@
+{
+  "Random Forest": {
+    "Accuracy": 1.0,
+    "Macro F1": 1.0,
+    "Cohen Kappa": 1.0
+  },
+  "SVM": {
+    "Accuracy": 0.9896,
+    "Macro F1": 0.9843,
+    "Cohen Kappa": 0.9876
+  },
+  "Gradient Boosting": {
+    "Accuracy": 0.9896,
+    "Macro F1": 0.9873,
+    "Cohen Kappa": 0.9876
+  },
+  "Stacked Ensemble": {
+    "Accuracy": 0.9896,
+    "Macro F1": 0.9843,
+    "Cohen Kappa": 0.9876
+  }
+}
