@@ -2,11 +2,6 @@
 
 > **An ML-powered system to predict which sports a 5–10 year old child is most likely to excel in, based on physical, cognitive, and physiological attributes.**
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-orange)](https://scikit-learn.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Status: Research](https://img.shields.io/badge/Status-Research%20%2F%20Pilot-yellow)]()
-
 ---
 
 ## 📌 Problem Statement
@@ -45,64 +40,9 @@ Child undergoes 20-min assessment → Scores fed into ML model → Top-3 sport r
 
 ---
 
-## 🗂️ Repository Structure
 
-```
-sports-talent-predictor/
-│
-├── data/
-│   ├── combined_sports_data.csv        # Primary dataset (542 records, 7 features)
-│   └── README_data.md                  # Data provenance and field descriptions
-│
-├── src/
-│   ├── preprocess.py                   # Data loading, cleaning, scaling
-│   ├── train.py                        # Model training pipeline (RF + SVM + ensemble)
-│   ├── evaluate.py                     # Metrics, confusion matrix, SHAP
-│   ├── predict.py                      # Single-child prediction interface
-│   └── gan_augment.py                  # Synthetic data augmentation (CTGAN)
-│
-├── notebooks/
-│   ├── 01_EDA.ipynb                    # Exploratory Data Analysis
-│   ├── 02_Model_Training.ipynb         # Full training walkthrough
-│   ├── 03_Evaluation.ipynb             # Metrics, SHAP, confusion matrix
-│   └── 04_GAN_Augmentation.ipynb       # CTGAN-based data augmentation
-│
-├── models/
-│   ├── random_forest_model.pkl         # Saved RF model
-│   ├── svm_model.pkl                   # Saved SVM model
-│   └── ensemble_model.pkl              # Stacked ensemble
-│
-├── results/
-│   ├── confusion_matrix.png
-│   ├── shap_summary.png
-│   ├── feature_importance.png
-│   └── classification_report.txt
-│
-├── tests/
-│   └── test_predict.py                 # Unit tests for prediction pipeline
-│
-├── requirements.txt
-├── setup.py
-└── README.md
-```
 
----
 
-## 🚀 Quick Start
-
-```bash
-# 1. Clone and install
-git clone https://github.com/YOUR_USERNAME/sports-talent-predictor.git
-cd sports-talent-predictor
-pip install -r requirements.txt
-
-# 2. Train all models
-python src/train.py
-
-# 3. Predict for a single child
-python src/predict.py \
-  --speed 7.5 --strength 6.0 --endurance 8.2 \
-  --flexibility 5.5 --cognitive 7.0 --reflex 6.8
 
 # Output:
 # 🏅 Top 3 Sport Recommendations:
@@ -192,11 +132,9 @@ python src/predict.py \
 
 ## 👤 Author
 
-**[Your Name]** — B.Tech (CS), 3rd Year  
+Aditya Paliwal — B.Tech (CS), 3rd Year  
 Built as an independent research project exploring ML applications in early sports talent identification.
 
----
 
-## 📄 License
 
-MIT License — see [LICENSE](LICENSE)
+
